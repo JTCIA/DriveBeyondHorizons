@@ -59,16 +59,16 @@
     </main>
   </div>
 
-  <!-- Save File Analyzer Modal -->
+  <!-- Save File Import Modal -->
   <div id="analyzer-overlay" class="analyzer-overlay" style="display:none">
     <div class="analyzer-modal">
       <div class="analyzer-header">
-        <h2>Save File Analyzer</h2>
+        <h2>Import from Save File</h2>
         <button id="analyzer-close" class="btn-close">&times;</button>
       </div>
-      <p class="analyzer-desc">
-        Drop your <strong>Garage.sav</strong> or <strong>SAVE_...</strong> file here.
-        This reads it locally — nothing is uploaded anywhere.
+      <p id="analyzer-desc" class="analyzer-desc">
+        Drop your <strong>Garage.sav</strong> or <strong>SAVE_&hellip;</strong> file to automatically check off the parts already in your save.
+        Processed entirely in your browser &mdash; nothing is uploaded.
       </p>
       <div id="drop-zone" class="drop-zone">
         <div class="drop-zone-inner">
@@ -81,16 +81,13 @@
           </label>
         </div>
       </div>
-      <div id="analyzer-results" class="analyzer-results" style="display:none">
-        <div class="analyzer-results-header">
-          <span id="analyzer-filename"></span>
-          <span id="analyzer-filesize"></span>
+      <div id="import-results" class="import-results" style="display:none">
+        <p id="import-summary" class="import-summary"></p>
+        <div id="import-car-list" class="import-car-list"></div>
+        <div class="import-actions">
+          <button id="import-apply" class="btn btn-primary">&#10003; Apply to Checklist</button>
+          <button id="import-scan-again" class="btn btn-secondary">Load different file</button>
         </div>
-        <p class="analyzer-instructions">
-          Copy everything in the box below and share it — this tells us what's inside the file so we can build the auto-import feature.
-        </p>
-        <textarea id="analyzer-output" class="analyzer-output" readonly></textarea>
-        <button id="analyzer-copy" class="btn btn-secondary">Copy to Clipboard</button>
       </div>
     </div>
   </div>

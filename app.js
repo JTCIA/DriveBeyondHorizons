@@ -812,6 +812,29 @@ function checkAllParts() {
   renderMain();
 }
 
+// --- Public API for save-file importer ---
+window.DBH = {
+  // Apply a set of part keys from save-file import; returns stats
+  importParts(partKeys) {
+    let newlyChecked = 0;
+    let alreadyChecked = 0;
+    partKeys.forEach(key => {
+      if (state[key]) {
+        alreadyChecked++;
+      } else {
+        state[key] = true;
+        newlyChecked++;
+      }
+    });
+    saveState(state);
+    renderSidebar();
+    renderMain();
+    return { newlyChecked, alreadyChecked };
+  },
+  getPartKey,
+  CARS_DATA
+};
+
 // Init
 document.addEventListener("DOMContentLoaded", () => {
   renderSidebar();
