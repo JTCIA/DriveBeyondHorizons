@@ -16,6 +16,7 @@
       </div>
       <ul id="car-list" class="car-list"></ul>
       <div class="sidebar-footer">
+        <button id="btn-analyze-save" class="btn btn-secondary btn-sm" style="width:100%;margin-bottom:6px">&#128190; Load Save File</button>
         <button id="btn-reset-all" class="btn btn-danger btn-sm">Reset All Progress</button>
       </div>
     </aside>
@@ -58,6 +59,43 @@
     </main>
   </div>
 
+  <!-- Save File Analyzer Modal -->
+  <div id="analyzer-overlay" class="analyzer-overlay" style="display:none">
+    <div class="analyzer-modal">
+      <div class="analyzer-header">
+        <h2>Save File Analyzer</h2>
+        <button id="analyzer-close" class="btn-close">&times;</button>
+      </div>
+      <p class="analyzer-desc">
+        Drop your <strong>Garage.sav</strong> or <strong>SAVE_...</strong> file here.
+        This reads it locally — nothing is uploaded anywhere.
+      </p>
+      <div id="drop-zone" class="drop-zone">
+        <div class="drop-zone-inner">
+          <div class="drop-icon">&#128190;</div>
+          <p>Drag &amp; drop a .sav file here</p>
+          <p class="drop-sub">or</p>
+          <label class="btn btn-secondary">
+            Browse files
+            <input type="file" id="sav-file-input" accept=".sav" style="display:none">
+          </label>
+        </div>
+      </div>
+      <div id="analyzer-results" class="analyzer-results" style="display:none">
+        <div class="analyzer-results-header">
+          <span id="analyzer-filename"></span>
+          <span id="analyzer-filesize"></span>
+        </div>
+        <p class="analyzer-instructions">
+          Copy everything in the box below and share it — this tells us what's inside the file so we can build the auto-import feature.
+        </p>
+        <textarea id="analyzer-output" class="analyzer-output" readonly></textarea>
+        <button id="analyzer-copy" class="btn btn-secondary">Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
   <script src="app.js"></script>
+  <script src="analyzer.js"></script>
 </body>
 </html>
