@@ -52,20 +52,20 @@ const CARS_DATA = [
       }
     ]
   },
+  // ─── Data below is sourced from Garage.sav item catalog ───────────────────
   {
     id: "triclops",
     name: "TriClops",
     inspiration: "Tucker 48",
-    totalParts: 54,
-    note: "Required for 'TriClops Restorer' achievement.",
+    totalParts: 35,
+    note: "Required for 'TriClops Restorer' achievement. The center headlight rotated with the steering wheel on the original Tucker 48.",
     categories: [
       {
         name: "Engine Parts",
         parts: [
           "Engine",
           "Radiator",
-          "Battery",
-          "Horn"
+          "Battery"
         ]
       },
       {
@@ -73,22 +73,15 @@ const CARS_DATA = [
         parts: [
           "Hood",
           "Trunk Lid",
-          "Windshield",
-          "Rear Window",
-          "Left Door",
-          "Right Door",
-          "Left Side Window",
-          "Right Side Window",
+          "Front Left Door",
+          "Front Right Door",
+          "Rear Left Door",
+          "Rear Right Door",
           "Front Bumper",
           "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
           "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)",
-          "Left Door Glass",
-          "Right Door Glass"
+          "Fuel Tank Lid",
+          "License Plate"
         ]
       },
       {
@@ -96,11 +89,12 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
+          "Front Seat",
           "Rear Seat",
-          "Left Door Panel",
-          "Right Door Panel",
+          "Front Left Door Panel",
+          "Front Right Door Panel",
+          "Rear Left Door Panel",
+          "Rear Right Door Panel",
           "Shifter",
           "Handbrake",
           "Ignition",
@@ -108,34 +102,17 @@ const CARS_DATA = [
           "Gas Pedal",
           "Brake Pedal",
           "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat",
-          "Glovebox Lid"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
+          "Left Sun Visor",
+          "Right Sun Visor"
         ]
       },
       {
         name: "Lights",
         parts: [
-          "Left Headlight",
-          "Center Headlight",
-          "Right Headlight",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal",
-          "Right Turn Signal"
+          "Headlight",
+          "Taillight",
+          "Left Interior Light",
+          "Right Interior Light"
         ]
       }
     ]
@@ -144,35 +121,28 @@ const CARS_DATA = [
     id: "ifa",
     name: "IFA",
     inspiration: "IFA W50 (East German truck)",
-    totalParts: 51,
-    note: "Diesel vehicle. Petrol engine is usable if diesel is removed. Required for 'IFA Restorer' achievement (Very Rare ~7.85%).",
+    totalParts: 31,
+    note: "Diesel vehicle. Petrol engine is usable if diesel is removed. Required for 'IFA Restorer' achievement.",
     categories: [
       {
         name: "Engine Parts",
         parts: [
           "Engine",
           "Radiator",
-          "Battery 180A"
+          "Battery"
         ]
       },
       {
         name: "Exterior Parts",
         parts: [
-          "Windshield",
-          "Left Corner Window",
-          "Right Corner Window",
-          "Front Bumper",
-          "License Plate (Front)",
-          "License Plate (Rear)",
-          "Battery Hatch",
-          "Roof Hatch",
-          "Grille",
-          "Left Door",
-          "Right Door",
-          "Left Door Glass",
-          "Right Door Glass",
           "Hood",
-          "Fuel Tank Lid"
+          "Front Bumper",
+          "Left Cab Door",
+          "Right Cab Door",
+          "Battery Access Door",
+          "Interior Hatch",
+          "License Plate",
+          "Rear Bed Cover"
         ]
       },
       {
@@ -180,34 +150,126 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
+          "Seat",
           "Left Door Panel",
           "Right Door Panel",
           "Shifter",
           "Handbrake",
           "Ignition",
           "Radio",
-          "Gas Pedal",
           "Brake Pedal",
-          "Clutch Pedal",
+          "Gas Pedal",
+          "Glovebox Lid",
           "Left Floor Mat",
-          "Right Floor Mat",
-          "Interior Dome Light (Left)",
-          "Interior Dome Light (Right)"
+          "Right Floor Mat"
         ]
       },
       {
-        name: "Wheel Parts",
+        name: "Lights",
         parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
+          "Headlight",
+          "Left Side Light",
+          "Right Side Light",
+          "Left Taillight",
+          "Right Taillight",
+          "Interior Light"
+        ]
+      }
+    ]
+  },
+  {
+    id: "musgoat",
+    name: "Musgoat",
+    inspiration: "1967 Ford Mustang fastback",
+    totalParts: 19,
+    note: "Has four headlights (two per side). Required for 'Musgoat Restorer' achievement.",
+    categories: [
+      {
+        name: "Engine Parts",
+        parts: [
+          "Engine"
+        ]
+      },
+      {
+        name: "Exterior Parts",
+        parts: [
+          "Hood",
+          "Trunk Lid",
+          "Left Door",
+          "Right Door",
+          "Front Bumper",
+          "Rear Bumper",
+          "Grille",
+          "Fuel Tank Lid"
+        ]
+      },
+      {
+        name: "Interior Parts",
+        parts: [
+          "Dashboard",
+          "Shifter",
+          "Pedal Assembly",
+          "Front Seat"
+        ]
+      },
+      {
+        name: "Lights",
+        parts: [
+          "Left Headlight",
+          "Right Headlight",
+          "Left Auxiliary Headlight",
+          "Right Auxiliary Headlight",
+          "Left Taillight",
+          "Right Taillight"
+        ]
+      }
+    ]
+  },
+  {
+    id: "gtr",
+    name: "GTR",
+    inspiration: "Nissan Skyline GT-R",
+    totalParts: 29,
+    note: "2-door coupe. Required for 'GTR Restorer' achievement.",
+    categories: [
+      {
+        name: "Engine Parts",
+        parts: [
+          "Engine",
+          "Radiator",
+          "Battery",
+          "Ignition"
+        ]
+      },
+      {
+        name: "Exterior Parts",
+        parts: [
+          "Hood",
+          "Left Door",
+          "Right Door",
+          "Front Bumper",
+          "Rear Bumper",
+          "Grille",
+          "License Plate"
+        ]
+      },
+      {
+        name: "Interior Parts",
+        parts: [
+          "Dashboard",
+          "Steering Wheel",
+          "Front Seat",
+          "Rear Seat",
+          "Left Door Panel",
+          "Right Door Panel",
+          "Shifter",
+          "Radio",
+          "Gas Pedal",
+          "Brake Pedal",
+          "Clutch Pedal",
+          "Glovebox Lid",
+          "Left Sun Visor",
+          "Right Sun Visor"
         ]
       },
       {
@@ -216,7 +278,110 @@ const CARS_DATA = [
           "Left Headlight",
           "Right Headlight",
           "Left Taillight",
-          "Right Taillight",
+          "Right Taillight"
+        ]
+      }
+    ]
+  },
+  {
+    id: "poyopa",
+    name: "Poyopa",
+    inspiration: "Toyota Hilux",
+    totalParts: 26,
+    note: "Diesel vehicle. Required for 'Poyopa Restorer' achievement.",
+    categories: [
+      {
+        name: "Engine Parts",
+        parts: [
+          "Engine",
+          "Ignition"
+        ]
+      },
+      {
+        name: "Exterior Parts",
+        parts: [
+          "Hood",
+          "Tailgate",
+          "Left Door",
+          "Right Door",
+          "Front Bumper",
+          "Armored Bumper (Bull Bars)",
+          "Grille",
+          "Fuel Tank Lid",
+          "Roll Bar",
+          "Turn Signal Lights"
+        ]
+      },
+      {
+        name: "Interior Parts",
+        parts: [
+          "Dashboard",
+          "Steering Wheel",
+          "Front Seat",
+          "Left Door Panel",
+          "Right Door Panel",
+          "Shifter",
+          "Handbrake",
+          "Pedal Assembly",
+          "Glovebox Lid",
+          "Console Lid"
+        ]
+      },
+      {
+        name: "Lights",
+        parts: [
+          "Left Headlight",
+          "Right Headlight",
+          "Left Taillight",
+          "Right Taillight"
+        ]
+      }
+    ]
+  },
+  {
+    id: "dada",
+    name: "Dada",
+    inspiration: "VAZ-2101 / Lada 1200",
+    totalParts: 23,
+    note: "Hidden fuel tank lid is inside the right rear fender well! Required for 'Dada Restorer' achievement.",
+    categories: [
+      {
+        name: "Engine Parts",
+        parts: [
+          "Engine"
+        ]
+      },
+      {
+        name: "Exterior Parts",
+        parts: [
+          "Hood",
+          "Trunk Lid",
+          "Front Left Door",
+          "Front Right Door",
+          "Rear Left Door",
+          "Rear Right Door",
+          "Front Bumper",
+          "Rear Bumper",
+          "Grille",
+          "Fuel Tank Lid"
+        ]
+      },
+      {
+        name: "Interior Parts",
+        parts: [
+          "Dashboard",
+          "Steering Wheel",
+          "Front Seat",
+          "Handbrake",
+          "Shifter",
+          "Pedal Assembly",
+          "Rear Shelf"
+        ]
+      },
+      {
+        name: "Lights",
+        parts: [
+          "Headlight",
           "Left Turn Signal",
           "Right Turn Signal",
           "Left Rear Light",
@@ -226,380 +391,19 @@ const CARS_DATA = [
     ]
   },
   {
-    id: "musgoat",
-    name: "Musgoat",
-    inspiration: "1967 Ford Mustang fastback",
-    totalParts: 49,
-    note: "Interior dome light is pre-installed and cannot be removed. Door windows cannot be re-attached if they pop out. Required for 'Musgoat Restorer' achievement.",
-    categories: [
-      {
-        name: "Engine Parts",
-        parts: [
-          "Engine",
-          "Radiator",
-          "Battery",
-          "Horn"
-        ]
-      },
-      {
-        name: "Exterior Parts",
-        parts: [
-          "Hood",
-          "Trunk Lid",
-          "Windshield",
-          "Rear Window",
-          "Left Door",
-          "Right Door",
-          "Left Door Glass",
-          "Right Door Glass",
-          "Front Bumper",
-          "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
-          "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)"
-        ]
-      },
-      {
-        name: "Interior Parts",
-        parts: [
-          "Dashboard",
-          "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Door Panel",
-          "Right Door Panel",
-          "Shifter",
-          "Handbrake",
-          "Ignition",
-          "Radio",
-          "Gas Pedal",
-          "Brake Pedal",
-          "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
-        ]
-      },
-      {
-        name: "Lights",
-        parts: [
-          "Left Headlight",
-          "Right Headlight",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal",
-          "Right Turn Signal"
-        ]
-      }
-    ]
-  },
-  {
-    id: "gtr",
-    name: "GTR",
-    inspiration: "Nissan Skyline GT-R",
-    totalParts: 55,
-    note: "Front-style seats must not be placed in the rear. Required for 'GTR Restorer' achievement.",
-    categories: [
-      {
-        name: "Engine Parts",
-        parts: [
-          "Engine",
-          "Radiator",
-          "Battery",
-          "Turbo",
-          "Horn"
-        ]
-      },
-      {
-        name: "Exterior Parts",
-        parts: [
-          "Hood",
-          "Trunk Lid",
-          "Windshield",
-          "Rear Window",
-          "Left Door",
-          "Right Door",
-          "Left Door Glass",
-          "Right Door Glass",
-          "Left Quarter Window",
-          "Right Quarter Window",
-          "Front Bumper",
-          "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
-          "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)"
-        ]
-      },
-      {
-        name: "Interior Parts",
-        parts: [
-          "Dashboard",
-          "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Rear Seat",
-          "Right Rear Seat",
-          "Left Door Panel",
-          "Right Door Panel",
-          "Shifter",
-          "Handbrake",
-          "Ignition",
-          "Radio",
-          "Gas Pedal",
-          "Brake Pedal",
-          "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat",
-          "Glovebox Lid"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
-        ]
-      },
-      {
-        name: "Lights",
-        parts: [
-          "Left Headlight",
-          "Right Headlight",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)",
-          "Interior Dome Light"
-        ]
-      }
-    ]
-  },
-  {
-    id: "poyopa",
-    name: "Poyopa",
-    inspiration: "Toyota Hilux",
-    totalParts: 56,
-    note: "Diesel vehicle. Turbo required for 'Poyopa Restorer' achievement. Required for 'Poyopa Restorer' achievement.",
-    categories: [
-      {
-        name: "Engine Parts",
-        parts: [
-          "Engine",
-          "Radiator",
-          "Battery",
-          "Turbo"
-        ]
-      },
-      {
-        name: "Exterior Parts",
-        parts: [
-          "Hood",
-          "Windshield",
-          "Rear Window",
-          "Left Door",
-          "Right Door",
-          "Bull Bars",
-          "Fuel Tank Lid",
-          "Left Mirror",
-          "Right Mirror",
-          "Grille",
-          "Front Bumper",
-          "License Plate",
-          "Tailgate",
-          "Roll Bar"
-        ]
-      },
-      {
-        name: "Interior Parts",
-        parts: [
-          "Dashboard",
-          "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Door Panel",
-          "Right Door Panel",
-          "Shifter",
-          "Handbrake",
-          "Ignition",
-          "Radio",
-          "Gas Pedal",
-          "Brake Pedal",
-          "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat",
-          "Glovebox Lid",
-          "Center Console Lid",
-          "Left Seatbelt Pillar Loop",
-          "Right Seatbelt Pillar Loop",
-          "Left Seatbelt Buckle",
-          "Right Seatbelt Buckle"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
-        ]
-      },
-      {
-        name: "Lights",
-        parts: [
-          "Left Headlight",
-          "Right Headlight",
-          "Left Turn Signal",
-          "Right Turn Signal",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Roll Bar Light",
-          "Right Roll Bar Light",
-          "Left Interior Dome Light",
-          "Right Interior Dome Light"
-        ]
-      }
-    ]
-  },
-  {
-    id: "dada",
-    name: "Dada",
-    inspiration: "VAZ-2101 / Lada 1200",
-    totalParts: 59,
-    note: "Hidden fuel tank lid is inside the right rear fender well! Required for 'Dada Restorer' achievement.",
-    categories: [
-      {
-        name: "Engine Parts",
-        parts: [
-          "Engine",
-          "Radiator",
-          "Battery",
-          "Horn"
-        ]
-      },
-      {
-        name: "Exterior Parts",
-        parts: [
-          "Hood",
-          "Trunk Lid",
-          "Windshield",
-          "Rear Window",
-          "Left Door (Front)",
-          "Right Door (Front)",
-          "Left Door (Rear)",
-          "Right Door (Rear)",
-          "Left Door Glass (Front)",
-          "Right Door Glass (Front)",
-          "Left Door Glass (Rear)",
-          "Right Door Glass (Rear)",
-          "Front Bumper",
-          "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
-          "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)"
-        ]
-      },
-      {
-        name: "Interior Parts",
-        parts: [
-          "Dashboard",
-          "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Rear Seat",
-          "Right Rear Seat",
-          "Left Front Door Panel",
-          "Right Front Door Panel",
-          "Left Rear Door Panel",
-          "Right Rear Door Panel",
-          "Shifter",
-          "Handbrake",
-          "Ignition",
-          "Radio",
-          "Gas Pedal",
-          "Brake Pedal",
-          "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat",
-          "Glovebox Lid",
-          "Interior Dome Light"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
-        ]
-      },
-      {
-        name: "Lights",
-        parts: [
-          "Left Headlight",
-          "Right Headlight",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)"
-        ]
-      }
-    ]
-  },
-  {
     id: "bonphiac",
     name: "Bonphiac",
     inspiration: "Pontiac Firebird",
-    totalParts: 59,
+    totalParts: 35,
     note: "Required for 'Bonphiac Restorer' achievement.",
     categories: [
       {
         name: "Engine Parts",
         parts: [
-          "V8 Engine",
+          "Engine",
           "Radiator",
           "Battery",
-          "Horn"
+          "Air Filter"
         ]
       },
       {
@@ -607,23 +411,14 @@ const CARS_DATA = [
         parts: [
           "Hood",
           "Trunk Lid",
-          "Windshield",
-          "Rear Window",
           "Left Door",
           "Right Door",
-          "Left Door Glass",
-          "Right Door Glass",
-          "Left Quarter Window",
-          "Right Quarter Window",
           "Front Bumper",
           "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
+          "Left Grille",
+          "Right Grille",
           "Fuel Tank Lid",
-          "Hood Scoop",
-          "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)"
+          "License Plate"
         ]
       },
       {
@@ -631,8 +426,7 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
+          "Front Seat",
           "Left Rear Seat",
           "Right Rear Seat",
           "Left Door Panel",
@@ -647,35 +441,15 @@ const CARS_DATA = [
           "Left Floor Mat",
           "Right Floor Mat",
           "Glovebox Lid",
-          "Interior Dome Light",
-          "Visor (Left)",
-          "Visor (Right)"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
+          "Left Sun Visor",
+          "Right Sun Visor"
         ]
       },
       {
         name: "Lights",
         parts: [
-          "Left Headlight",
-          "Right Headlight",
           "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)"
+          "Right Taillight"
         ]
       }
     ]
@@ -683,9 +457,9 @@ const CARS_DATA = [
   {
     id: "golf",
     name: "Golf",
-    inspiration: "Volkswagen Golf",
-    totalParts: 59,
-    note: "Turbo required for 'Golf Restorer' achievement.",
+    inspiration: "Volkswagen Golf (3-door hatchback)",
+    totalParts: 35,
+    note: "Required for 'Golf Restorer' achievement.",
     categories: [
       {
         name: "Engine Parts",
@@ -693,33 +467,22 @@ const CARS_DATA = [
           "Engine",
           "Radiator",
           "Battery",
-          "Turbo",
-          "Horn"
+          "Ignition"
         ]
       },
       {
         name: "Exterior Parts",
         parts: [
           "Hood",
-          "Trunk Lid",
-          "Windshield",
-          "Rear Window",
-          "Left Door (Front)",
-          "Right Door (Front)",
-          "Left Door (Rear)",
-          "Right Door (Rear)",
-          "Left Door Glass (Front)",
-          "Right Door Glass (Front)",
-          "Left Door Glass (Rear)",
-          "Right Door Glass (Rear)",
+          "Trunk (Hatch)",
+          "Left Door",
+          "Right Door",
           "Front Bumper",
           "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
+          "Front Spoiler",
           "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)"
+          "Antenna",
+          "License Plate"
         ]
       },
       {
@@ -727,17 +490,12 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Rear Seat",
-          "Right Rear Seat",
-          "Left Front Door Panel",
-          "Right Front Door Panel",
-          "Left Rear Door Panel",
-          "Right Rear Door Panel",
+          "Front Seat",
+          "Rear Seat Bench",
+          "Left Door Panel",
+          "Right Door Panel",
           "Shifter",
           "Handbrake",
-          "Ignition",
           "Radio",
           "Gas Pedal",
           "Brake Pedal",
@@ -745,33 +503,17 @@ const CARS_DATA = [
           "Left Floor Mat",
           "Right Floor Mat",
           "Glovebox Lid",
-          "Interior Dome Light"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
+          "Parcel Shelf",
+          "Left Sun Visor",
+          "Right Sun Visor"
         ]
       },
       {
         name: "Lights",
         parts: [
-          "Left Headlight",
-          "Right Headlight",
+          "Headlight",
           "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)"
+          "Right Taillight"
         ]
       }
     ]
@@ -780,7 +522,7 @@ const CARS_DATA = [
     id: "c18",
     name: "C18",
     inspiration: "Citroën C15 (panel van)",
-    totalParts: 63,
+    totalParts: 32,
     note: "Diesel vehicle. Required for 'C18 Restorer' achievement.",
     categories: [
       {
@@ -789,32 +531,23 @@ const CARS_DATA = [
           "Engine",
           "Radiator",
           "Battery",
-          "Horn"
+          "Ignition"
         ]
       },
       {
         name: "Exterior Parts",
         parts: [
           "Hood",
-          "Rear Cargo Door (Left)",
-          "Rear Cargo Door (Right)",
-          "Windshield",
-          "Left Door",
-          "Right Door",
-          "Left Door Glass",
-          "Right Door Glass",
-          "Left Rear Side Window",
-          "Right Rear Side Window",
+          "Left Front Door",
+          "Right Front Door",
+          "Left Cargo Door",
+          "Right Cargo Door",
           "Front Bumper",
           "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
           "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)",
-          "Left Sliding Door",
-          "Roof Panel"
+          "Antenna",
+          "Front License Plate",
+          "Rear License Plate"
         ]
       },
       {
@@ -822,35 +555,17 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Door Panel",
-          "Right Door Panel",
-          "Cargo Partition",
+          "Front Seat",
+          "Left Cargo Door Panel",
+          "Right Cargo Door Panel",
           "Shifter",
-          "Handbrake",
-          "Ignition",
           "Radio",
           "Gas Pedal",
           "Brake Pedal",
           "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat",
           "Glovebox Lid",
-          "Interior Dome Light"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
+          "Left Sun Visor",
+          "Right Sun Visor"
         ]
       },
       {
@@ -859,17 +574,7 @@ const CARS_DATA = [
           "Left Headlight",
           "Right Headlight",
           "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)",
-          "Interior Cargo Light",
-          "Rear Fog Light",
-          "Reverse Light",
-          "License Plate Light",
-          "Side Marker Light (Left)",
-          "Side Marker Light (Right)"
+          "Right Taillight"
         ]
       }
     ]
@@ -877,8 +582,8 @@ const CARS_DATA = [
   {
     id: "uaz",
     name: "UAZ",
-    inspiration: "UAZ compact van",
-    totalParts: 81,
+    inspiration: "UAZ-452 compact van",
+    totalParts: 38,
     note: "Left and right side windows look identical but are NOT interchangeable. Ladder can only be attached to the rear right door. Required for 'UAZ Restorer' achievement.",
     categories: [
       {
@@ -887,42 +592,25 @@ const CARS_DATA = [
           "Engine",
           "Radiator",
           "Battery",
-          "Horn"
+          "Ignition"
         ]
       },
       {
         name: "Exterior Parts",
         parts: [
-          "Hood",
-          "Hood Scoop",
-          "Windshield",
-          "Rear Window",
-          "Left Front Door",
-          "Right Front Door",
-          "Left Rear Door",
-          "Right Rear Door",
-          "Rear Hatch Door",
-          "Left Front Door Glass",
-          "Right Front Door Glass",
-          "Left Side Window",
-          "Right Side Window",
-          "Left Large Side Window",
-          "Right Large Side Window",
-          "Front Bumper",
+          "Front Left Door",
+          "Front Right Door",
+          "Rear Left Door",
+          "Rear Right Door",
+          "Side Door",
+          "Upper Rear Door",
+          "Front Armored Bumper",
           "Rear Bumper",
-          "Left Mirror",
-          "Right Mirror",
-          "Fuel Tank Lid",
           "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)",
-          "Roll Bar",
-          "Left Front Fender",
-          "Right Front Fender",
-          "Left Rear Fender",
-          "Right Rear Fender",
-          "Spare Tire Mount",
-          "Antenna"
+          "Antenna",
+          "License Plate",
+          "Ladder",
+          "Roof Storage Box"
         ]
       },
       {
@@ -930,66 +618,30 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Rear Seat",
-          "Right Rear Seat",
-          "Left Front Door Panel",
-          "Right Front Door Panel",
-          "Left Rear Door Panel",
-          "Right Rear Door Panel",
+          "Front Seat",
+          "Rear Seat",
+          "Front Left Door Panel",
+          "Front Right Door Panel",
+          "Side Door Panel",
           "Shifter",
           "Handbrake",
-          "Ignition",
           "Radio",
           "Gas Pedal",
           "Brake Pedal",
           "Clutch Pedal",
           "Left Floor Mat",
           "Right Floor Mat",
-          "Glovebox Lid",
-          "Center Console Lid",
-          "Visor (Left)",
-          "Visor (Right)",
-          "Interior Dome Light (Front)",
-          "Interior Dome Light (Rear)",
-          "Left Seatbelt Pillar Loop",
-          "Right Seatbelt Pillar Loop",
-          "Left Seatbelt Buckle",
-          "Right Seatbelt Buckle",
-          "Cargo Bed Panel"
-        ]
-      },
-      {
-        name: "Wheel Parts",
-        parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Spare Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire",
-          "Spare Tire"
+          "Left Sun Visor",
+          "Right Sun Visor",
+          "Table",
+          "Interior Wall Panel"
         ]
       },
       {
         name: "Lights",
         parts: [
-          "Left Headlight",
-          "Right Headlight",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)",
-          "Left Roll Bar Light",
-          "Right Roll Bar Light",
-          "Reverse Light",
-          "License Plate Light"
+          "Headlight",
+          "Taillight"
         ]
       }
     ]
