@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drive Beyond Horizons — Parts Checklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="app-title">Drive Beyond<br>Horizons</h1>
+        <p class="app-subtitle">Parts Checklist</p>
+      </div>
+      <ul id="car-list" class="car-list"></ul>
+      <div class="sidebar-footer">
+        <button id="btn-reset-all" class="btn btn-danger btn-sm">Reset All Progress</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main-header">
+        <div class="car-info">
+          <h2 id="car-title" class="car-title"></h2>
+          <p id="car-inspiration" class="car-inspiration"></p>
+        </div>
+        <div class="main-actions">
+          <button id="btn-check-all" class="btn btn-secondary btn-sm">Check All</button>
+          <button id="btn-reset-car" class="btn btn-danger btn-sm">Reset Car</button>
+        </div>
+      </div>
+
+      <div id="car-note-box" class="note-box">
+        <span class="note-icon">&#9432;</span>
+        <span id="car-note"></span>
+      </div>
+
+      <div id="completion-banner" class="completion-banner" style="display:none">
+        <span class="trophy">&#127942;</span>
+        <span>All parts found! Achievement unlocked!</span>
+        <span class="trophy">&#127942;</span>
+      </div>
+
+      <div class="overall-progress">
+        <div class="overall-progress-header">
+          <span>Overall Progress</span>
+          <span id="overall-progress-text"></span>
+        </div>
+        <div class="progress-bar large">
+          <div id="overall-progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="categories" class="categories"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
