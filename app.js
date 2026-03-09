@@ -457,9 +457,9 @@ const CARS_DATA = [
   {
     id: "golf",
     name: "Golf",
-    inspiration: "Volkswagen Golf (3-door hatchback)",
-    totalParts: 41,
-    note: "Required for 'Golf Restorer' achievement.",
+    inspiration: "Volkswagen Golf",
+    totalParts: 59,
+    note: "Turbo required for 'Golf Restorer' achievement.",
     categories: [
       {
         name: "Engine Parts",
@@ -467,28 +467,33 @@ const CARS_DATA = [
           "Engine",
           "Radiator",
           "Battery",
-          "Ignition"
+          "Turbo",
+          "Horn"
         ]
       },
       {
         name: "Exterior Parts",
         parts: [
           "Hood",
-          "Trunk (Hatch)",
-          "Left Door",
-          "Right Door",
+          "Trunk Lid",
+          "Windshield",
+          "Rear Window",
+          "Left Door (Front)",
+          "Right Door (Front)",
+          "Left Door (Rear)",
+          "Right Door (Rear)",
+          "Left Door Glass (Front)",
+          "Right Door Glass (Front)",
+          "Left Door Glass (Rear)",
+          "Right Door Glass (Rear)",
           "Front Bumper",
           "Rear Bumper",
-          "Front Spoiler",
+          "Left Mirror",
+          "Right Mirror",
+          "Fuel Tank Lid",
           "Grille",
-          "Antenna",
-          "License Plate",
-          "Left Side Mirror",
-          "Right Side Mirror",
-          "Front Windshield",
-          "Rear Window",
-          "Left Window",
-          "Right Window"
+          "License Plate (Front)",
+          "License Plate (Rear)"
         ]
       },
       {
@@ -496,12 +501,17 @@ const CARS_DATA = [
         parts: [
           "Dashboard",
           "Steering Wheel",
-          "Front Seat",
-          "Rear Seat Bench",
-          "Left Door Panel",
-          "Right Door Panel",
+          "Left Front Seat",
+          "Right Front Seat",
+          "Left Rear Seat",
+          "Right Rear Seat",
+          "Left Front Door Panel",
+          "Right Front Door Panel",
+          "Left Rear Door Panel",
+          "Right Rear Door Panel",
           "Shifter",
           "Handbrake",
+          "Ignition",
           "Radio",
           "Gas Pedal",
           "Brake Pedal",
@@ -509,17 +519,33 @@ const CARS_DATA = [
           "Left Floor Mat",
           "Right Floor Mat",
           "Glovebox Lid",
-          "Parcel Shelf",
-          "Left Sun Visor",
-          "Right Sun Visor"
+          "Interior Dome Light"
+        ]
+      },
+      {
+        name: "Wheel Parts",
+        parts: [
+          "Front Left Wheel",
+          "Front Right Wheel",
+          "Rear Left Wheel",
+          "Rear Right Wheel",
+          "Front Left Tire",
+          "Front Right Tire",
+          "Rear Left Tire",
+          "Rear Right Tire"
         ]
       },
       {
         name: "Lights",
         parts: [
-          "Headlight",
+          "Left Headlight",
+          "Right Headlight",
           "Left Taillight",
-          "Right Taillight"
+          "Right Taillight",
+          "Left Turn Signal (Front)",
+          "Right Turn Signal (Front)",
+          "Left Turn Signal (Rear)",
+          "Right Turn Signal (Rear)"
         ]
       }
     ]
