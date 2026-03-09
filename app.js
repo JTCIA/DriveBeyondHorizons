@@ -832,7 +832,8 @@ window.DBH = {
     return { newlyChecked, alreadyChecked };
   },
   getPartKey,
-  CARS_DATA
+  CARS_DATA,
+  getActiveCar() { return activeCar; }
 };
 
 // Init
