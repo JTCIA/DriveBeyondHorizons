@@ -467,85 +467,82 @@ const CARS_DATA = [
           "Engine",
           "Radiator",
           "Battery",
-          "Turbo",
-          "Horn"
+          "Turbo"
         ]
       },
       {
         name: "Exterior Parts",
         parts: [
-          "Hood",
-          "Trunk Lid",
           "Windshield",
           "Rear Window",
-          "Left Door (Front)",
-          "Right Door (Front)",
-          "Left Door (Rear)",
-          "Right Door (Rear)",
-          "Left Door Glass (Front)",
-          "Right Door Glass (Front)",
-          "Left Door Glass (Rear)",
-          "Right Door Glass (Rear)",
-          "Front Bumper",
-          "Rear Bumper",
+          "Left Door",
+          "Right Door",
+          "Trunk Lid",
           "Left Mirror",
           "Right Mirror",
-          "Fuel Tank Lid",
+          "Hood",
           "Grille",
-          "License Plate (Front)",
-          "License Plate (Rear)"
+          "Front Bumper",
+          "Front Spoiler",
+          "Rear Bumper",
+          "License Plate Front",
+          "License Plate Rear",
+          "Antenna"
         ]
       },
       {
         name: "Interior Parts",
         parts: [
-          "Dashboard",
-          "Steering Wheel",
-          "Left Front Seat",
-          "Right Front Seat",
-          "Left Rear Seat",
-          "Right Rear Seat",
-          "Left Front Door Panel",
-          "Right Front Door Panel",
-          "Left Rear Door Panel",
-          "Right Rear Door Panel",
-          "Shifter",
-          "Handbrake",
-          "Ignition",
-          "Radio",
+          "Left Door Panel",
+          "Right Door Panel",
+          "Front Left Seat",
+          "Front Right Seat",
+          "Rear Seat",
+          "Cargo Cover",
+          "Left Floor Mat",
+          "Right Floor Mat",
           "Gas Pedal",
           "Brake Pedal",
           "Clutch Pedal",
-          "Left Floor Mat",
-          "Right Floor Mat",
+          "Shifter",
+          "Handbrake",
+          "Steering Wheel",
+          "Ignition",
+          "Dashboard",
+          "Radio",
           "Glovebox Lid",
-          "Interior Dome Light"
+          "Left Visor",
+          "Right Visor",
+          "Seat Belt Pillar Loop Left",
+          "Seat Belt Pillar Loop Right",
+          "Seat Belt Buckle Left",
+          "Seat Belt Buckle Right"
         ]
       },
       {
         name: "Wheel Parts",
         parts: [
-          "Front Left Wheel",
-          "Front Right Wheel",
-          "Rear Left Wheel",
-          "Rear Right Wheel",
-          "Front Left Tire",
-          "Front Right Tire",
-          "Rear Left Tire",
-          "Rear Right Tire"
+          "Wheel Front Left",
+          "Wheel Front Right",
+          "Wheel Rear Left",
+          "Wheel Rear Right",
+          "Tire Front Left",
+          "Tire Front Right",
+          "Tire Rear Left",
+          "Tire Rear Right"
         ]
       },
       {
         name: "Lights",
         parts: [
-          "Left Headlight",
-          "Right Headlight",
-          "Left Taillight",
-          "Right Taillight",
-          "Left Turn Signal (Front)",
-          "Right Turn Signal (Front)",
-          "Left Turn Signal (Rear)",
-          "Right Turn Signal (Rear)"
+          "Headlight Left",
+          "Headlight Right",
+          "Front Turn Signal Left",
+          "Front Turn Signal Right",
+          "Left Brake Light",
+          "Right Brake Light",
+          "Left Dome Light",
+          "Right Dome Light"
         ]
       }
     ]
