@@ -458,7 +458,7 @@ const CARS_DATA = [
     id: "golf",
     name: "Golf",
     inspiration: "Volkswagen Golf (3-door hatchback)",
-    totalParts: 35,
+    totalParts: 41,
     note: "Required for 'Golf Restorer' achievement.",
     categories: [
       {
@@ -482,7 +482,13 @@ const CARS_DATA = [
           "Front Spoiler",
           "Grille",
           "Antenna",
-          "License Plate"
+          "License Plate",
+          "Left Side Mirror",
+          "Right Side Mirror",
+          "Front Windshield",
+          "Rear Window",
+          "Left Window",
+          "Right Window"
         ]
       },
       {

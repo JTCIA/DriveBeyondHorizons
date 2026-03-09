@@ -178,6 +178,15 @@
     // ── Other lights ──────────────────────────────────────────
     { pattern: 'BP_IFA_Light_L_FS_TS',       role: 'Left Side Light' },
     { pattern: 'BP_IFA_Light_Int',            role: 'Interior Light' },
+
+    // ── Mirrors ───────────────────────────────────────────────
+    { pattern: 'BP_Lada_Mirror_Left',         role: 'Left Side Mirror' },
+    { pattern: 'BP_Musgoat_Mirror_Left',      role: 'Left Side Mirror' },
+    { pattern: 'BP_Pontiac_DoorMirror_L',     role: 'Left Side Mirror' },
+    { pattern: 'BP_IFA_Mirror_R',             role: 'Right Side Mirror' },
+    { pattern: 'BP_Lada_Mirror_Right',        role: 'Right Side Mirror' },
+    { pattern: 'BP_Golf_Mirror_Left',         role: 'Left Side Mirror' },
+    { pattern: 'BP_Golf_Mirror_Right',        role: 'Right Side Mirror' },
   ];
 
   // ----------------------------------------------------------
@@ -257,6 +266,14 @@
     'Right Turn Signal':           ['Right Turn Signal'],
     'Left Side Light':             ['Left Side Light'],
     'Interior Light':              ['Interior Light'],
+    // Mirrors
+    'Left Side Mirror':            ['Left Side Mirror'],
+    'Right Side Mirror':           ['Right Side Mirror'],
+    // Glass — listed for completeness; cannot be auto-detected from save
+    'Front Windshield':            ['Front Windshield'],
+    'Rear Window':                 ['Rear Window'],
+    'Left Window':                 ['Left Window'],
+    'Right Window':                ['Right Window'],
   };
 
   // ----------------------------------------------------------
